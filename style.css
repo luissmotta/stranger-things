@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+@font-face {
+  font-family: "Benguiat";
+  src: url("./fontes/benguiat-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -13,13 +18,7 @@ body {
   overflow-x: hidden !important;
 }
 
-@font-face {
-  font-family: "Benguiat";
-  src: url(fontes/Benguiat\ Bold.ttf);
-}
-
 body {
-  overflow-x: hidden;
   background-color: #0C0102;
   color: rgba(255, 255, 255, 0.801);
   font-family: "Poppins", sans-serif;
@@ -46,20 +45,16 @@ body button {
   height: 100vh;
 }
 
-
 #preloader svg {
   width: 25%;
   height: auto;
+}
 
-  path {
-    fill: rgba(134, 23, 23, 0.329);
-    stroke: rgb(173, 30, 30);
-    stroke-dasharray: 640;
-    stroke-dashoffset: 640;
-  }
-
-
-
+#preloader svg path {
+  fill: rgba(134, 23, 23, 0.329);
+  stroke: rgb(173, 30, 30);
+  stroke-dasharray: 640;
+  stroke-dashoffset: 640;
 }
 
 header {
@@ -69,6 +64,10 @@ header {
   position: absolute;
   width: 100%;
   z-index: 50;
+}
+
+header h2 {
+  font-size: 28px;
 }
 
 .hero {
@@ -101,10 +100,6 @@ header {
 
 .hero-overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
   inset: 0;
   background: linear-gradient(180deg, rgba(12, 1, 2, 0) 0%, #0C0102 100%);
   z-index: 2;
@@ -148,7 +143,6 @@ header {
 }
 
 .direita h2 {
-  text-align: end;
   font-size: 2vw;
   margin-bottom: 32px;
   font-weight: 400;
@@ -183,10 +177,6 @@ h2 {
   font-weight: 500;
 }
 
-header h2 {
-  font-size: 28px;
-}
-
 .cards {
   margin-top: 52px;
   display: flex;
@@ -194,24 +184,16 @@ header h2 {
   width: 100%;
 }
 
-.card1 {
-  background-image: url(imagens/card1.webp);
-}
-
-.card2 {
-  background-image: url(imagens/card2.webp);
-}
-
-.card3 {
-  background-image: url(imagens/card3.webp);
-}
+.card1 { background-image: url("./imagens/card1.webp"); }
+.card2 { background-image: url("./imagens/card2.webp"); }
+.card3 { background-image: url("./imagens/card3.webp"); }
 
 .card1,
 .card2,
 .card3 {
   width: 32%;
   aspect-ratio: 16/9;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -235,7 +217,6 @@ header h2 {
 
 .depoimentoscards {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   margin-top: 62px;
@@ -251,7 +232,6 @@ ul {
 }
 
 .obrigado {
-  z-index: 2;
   position: relative;
   background-color: #0C0102;
   padding: 7vw;
@@ -260,14 +240,9 @@ ul {
   align-items: center;
 }
 
-.lista {
-  width: 100%;
-}
-
 .lista ul {
   margin-top: 40px;
   width: 100%;
-  text-decoration: none;
   display: flex;
   justify-content: space-between;
 }
@@ -278,9 +253,8 @@ section {
 
 .bgmonstro {
   position: relative;
-  z-index: 1;
   background-color: #0C0102;
-  background-image: url(imagens/bg-sec2.webp);
+  background-image: url("./imagens/bg-sec2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -291,7 +265,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(imagens/bg-footer.webp);
+  background-image: url("./imagens/bg-footer.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -367,9 +341,7 @@ footer {
 
 @media(max-width:600px) {
 
-  header h2 {
-    font-size: 24px;
-  }
+  header h2 { font-size: 24px; }
 
   .hero {
     flex-direction: column;
@@ -393,22 +365,16 @@ footer {
     margin-bottom: 16px;
   }
 
-  .cidade button {
-    display: none;
-  }
+  .cidade button { display: none; }
 
-  .cidade {
-    padding: 2vw;
-  }
+  .cidade { padding: 2vw; }
 
   .cidade h2 {
     width: 100%;
     text-align: start;
   }
 
-  h2 {
-    font-size: 6vw;
-  }
+  h2 { font-size: 6vw; }
 
   .cards {
     margin-top: 20px;
@@ -436,13 +402,9 @@ footer {
     gap: 18px;
   }
 
-  .depoimentocard img {
-    width: 18%;
-  }
+  .depoimentocard img { width: 18%; }
 
-  .depoimentocard p {
-    font-size: 3.2vw;
-  }
+  .depoimentocard p { font-size: 3.2vw; }
 
   .divfooter {
     padding: 4vw;
@@ -454,9 +416,7 @@ footer {
     text-align: center;
   }
 
-  .logofooter h2 {
-    font-size: 12vw;
-  }
+  .logofooter h2 { font-size: 12vw; }
 
   .social {
     padding: 4vw;
@@ -474,24 +434,12 @@ footer {
     margin: 40px 0 32px;
   }
 
-  .parceiro {
-    width: 50%;
-  }
+  .parceiro { width: 50%; }
+  .institucional { width: 40%; }
 
-  .institucional {
-    width: 40%;
-  }
+  .parceiro img { width: 100%; }
 
-  .parceiro img {
-    width: 100%;
-  }
+  .infinito h3 { font-size: 20vw; }
 
-  .infinito h3 {
-    font-size: 20vw;
-  }
-
-  .netflix {
-    margin: 40px 0;
-  }
-
+  .netflix { margin: 40px 0; }
 }
