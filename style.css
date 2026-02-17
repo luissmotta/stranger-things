@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Benguiat";
-  src: url("./fontes/benguiat-bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("./fontes/Benguiat%20Bold.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -443,3 +443,4 @@ footer {
 
   .netflix { margin: 40px 0; }
 }
+
