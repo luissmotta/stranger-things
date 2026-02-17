@@ -15,7 +15,7 @@ body {
 
 @font-face {
   font-family: "Benguiat";
-  src: url(/fontes/Benguiat\ Bold.ttf);
+  src: url(fontes/Benguiat\ Bold.ttf);
 }
 
 body {
@@ -493,4 +493,5 @@ footer {
   .netflix {
     margin: 40px 0;
   }
+
 }
